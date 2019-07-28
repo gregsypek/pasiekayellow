@@ -1,0 +1,250 @@
+.about {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr repeat(5, minmax(20rem, min-content)) 1fr;
+    ;
+    grid-template-rows: repeat(12, minmax(10rem, min-content));
+
+    @media only screen and (max-width: $bp-big) {
+        grid-template-columns: 1fr repeat(5, minmax(18rem, min-content)) 1fr;
+        ;
+        grid-template-rows: repeat(12, minmax(8rem, min-content));
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: 1fr repeat(5, minmax(13rem, min-content)) 1fr;
+        ;
+        grid-template-rows: repeat(12, minmax(3rem, min-content));
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr repeat(3, minmax(10rem, min-content)) 1fr;
+        grid-template-rows: repeat(20, minmax(8rem, min-content));
+        grid-gap: 1rem;
+        ;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(20, minmax(3rem, min-content));
+        grid-gap: 1.5rem;
+        ;
+    }
+
+    .hexagon {
+        position: relative; // margin: 4rem;
+        @extend %hexagon;
+        background: $color-cream;
+        width: 35vw;
+        height: 35vw;
+        font-size: 3rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 50vw;
+            height: 50vw;
+            font-size: 2.2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 55vw;
+            height: 55vw;
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 63vw;
+            height: 63vw;
+            font-size: 1.8rem;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+            background-size: cover;
+            background-origin: center;
+            background-image: linear-gradient(to right bottom, rgba($color-cream, 0.8), rgba($col-shadow, 0.8));
+        }
+
+        &-about-1 {
+            grid-column: 2/4;
+            grid-row: 2/6;
+            background: $color-white;
+
+        }
+
+        &-about-2 {
+            grid-column: 4/6;
+            grid-row: 2/6;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-column: 3/5;
+                grid-row: 5/9;
+            }
+        }
+
+        &-about-3 {
+            grid-column: 3/5;
+            grid-row: 5/9;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-column: 2/4;
+                grid-row: 8/12;
+            }
+        }
+
+        &-about-4 {
+            grid-column: 5/7;
+            grid-row: 5/9;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-column: 3/5;
+                grid-row: 11/15;
+            }
+        }
+
+        &-about-5 {
+            grid-column: 2/4;
+            grid-row: 8/12;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-column: 2/4;
+                grid-row: 14/18;
+            }
+        }
+
+        &-about-6 {
+            grid-column: 4/6;
+            grid-row: 8/12;
+
+            @media only screen and (max-width: $bp-medium) {
+                grid-column: 3/5;
+                grid-row: 17/21;
+            }
+        }
+
+        h1 {
+            position: absolute;
+            top: 9rem;
+            left: 15.5rem;
+            color: $color-dark-orange-3;
+
+            @media only screen and (max-width: $bp-big) {
+                left: 9rem;
+            }
+
+            @media only screen and (max-width: $bp-largest) {
+                left: 8.5rem;
+                top: 7rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                top: 8rem;
+                left: 9rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                top: 6rem;
+                left: 7rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                top: 5rem;
+                left: 6.5rem;
+            }
+
+        }
+
+        p {
+            position: absolute;
+            padding: 1.2rem;
+            font-size: 2.5rem;
+            color: $color-brown-2;
+            top: 14rem;
+            left: 2rem;
+            letter-spacing: .2rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 1.8rem;
+                top: 11rem;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                font-size: 1.5rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.6rem;
+                top: 12rem;
+                left: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                top: 9rem;
+                font-size: 1.8rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                top: 9rem;
+                padding: .2rem;
+            }
+
+        }
+    }
+
+    .hexagon::before {
+        content: '';
+        width: 33vw;
+        height: 33vw;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background: $color-orange;
+        display: block;
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 46vw;
+            height: 46vw;
+            top: 2vw;
+            left: 2vw;
+
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 51vw;
+            height: 51vw;
+            top: 2vw;
+            left: 2vw;
+
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 59vw;
+            height: 59vw;
+            top: 2vw;
+            left: 2vw;
+
+        }
+
+    }
+
+    .hexagon-image::before {
+        content: '';
+        width: 33vw;
+        height: 33vw;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        background: transparent;
+        display: block;
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+
+    }
+}

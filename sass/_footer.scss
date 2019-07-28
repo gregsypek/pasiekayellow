@@ -1,0 +1,74 @@
+.footer {
+    background: $col-beige;
+    color: $color-dark-orange-3;
+
+    &-nav {
+
+        margin: 0;
+        padding-right: 5rem;
+        border-top: 2px solid rgba($col-shadow, 0.5);
+
+        &--left {
+            justify-content: flex-start;
+        }
+
+        &--right {
+            justify-content: flex-end;
+            color: $color-dark-orange-3;
+
+            li {
+                text-decoration: none;
+            }
+
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $color-dark-orange-3;
+                transition: color .2s ease;
+
+                &:hover {
+                    color: $col-wing;
+                }
+            }
+
+        }
+
+        &--left,
+        &--right {
+            display: flex;
+            align-content: center;
+            list-style: none;
+
+        }
+
+        li {
+            padding: 1rem;
+
+            font-size: 2rem;
+
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: $color-grey;
+
+        text-align: center;
+        padding: 3rem;
+        margin: 0;
+
+        @media only screen and (max-width: $bp-small) {
+            text-align: left;
+        }
+    }
+
+    img.bee-grey {
+        width: 3.5rem;
+
+        &:hover {
+            animation: beeAnimation 1.3s ease-in-out infinite;
+        }
+    }
+
+}

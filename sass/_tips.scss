@@ -1,0 +1,169 @@
+.tips {
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .tips__header {
+        text-align: center;
+        margin: 3rem auto 13rem;
+        width: 33%;
+        font-size: 4rem;
+        padding: 1rem;
+        color: $color-dark-orange-3;
+        letter-spacing: .5rem;
+        background: $color-orange;
+        box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+        border: 6px solid $color-cream;
+        border-radius: 10px;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.5rem;
+            margin: 1rem auto 10rem;
+            width: 50%;
+            letter-spacing: .3rem;
+        }
+    }
+
+    span.underlain {
+        width: 15rem;
+        border-bottom: .5rem solid $color-dark-orange;
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @extend %bgc-transparent-2;
+
+        @media only screen and (max-width: $bp-largest) {
+            flex: 1;
+        }
+
+        .slider {
+            align-items: center;
+
+            .slide {
+                display: none;
+                margin: 0 auto;
+                opacity: 0;
+                height: 25rem;
+                width: 60vw;
+
+                animation: slideOn 5s ease-in forwards;
+
+                @media only screen and (max-width: $bp-medium) {
+                    width: 80vw;
+                }
+
+                @media only screen and (max-width: $bp-small) {
+                    width: 90vw;
+                }
+
+                .quote {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    padding: 1rem;
+                    font-size: 2.5rem;
+                    text-align: center;
+                    letter-spacing: .2rem;
+                    margin-bottom: 2rem;
+
+                    @media only screen and (max-width: $bp-small) {
+                        padding: 2rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .active-slide {
+                position: relative;
+                top: 0;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                display: block;
+                color: $color-dark-orange-3;
+                background: $color-orange;
+
+                @extend %shadow;
+                border: 4px solid $color-cream;
+
+                border-radius: 10px;
+            }
+        }
+
+        address {
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-bottom: 1rem;
+
+        }
+
+        .slide-dots {
+            width: 100%;
+            height: 2rem;
+            align-self: center;
+            text-align: center;
+            margin-top: 1rem;
+            padding-top: 3rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-top: 2rem;
+            }
+
+            span {
+                display: inline-block;
+                background: $color-dark-orange;
+                margin: 0 10px;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .active-dots {
+                background: $color-cream;
+            }
+        }
+    }
+
+    &__movie {
+        margin: 15rem 4rem;
+        width: 64vw;
+        align-self: center;
+        position: relative;
+        padding-bottom: 35.25%;
+        /*16:9*/
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        // box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+        background: $color-cream;
+
+        .movie {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1rem solid $color-cream;
+
+        }
+
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 80vw;
+            height: 45vw; //video format similar to 16:9
+        }
+    }
+}

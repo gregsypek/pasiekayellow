@@ -1,0 +1,115 @@
+section.offer {
+
+    h2.offer__header {
+        @extend %header;
+    }
+
+
+    .offer__box {
+        display: grid;
+        justify-content: center;
+
+
+        justify-items: center; // align-content: center;
+        font-size: 3rem;
+        color: $color-orange;
+
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+        }
+
+        th {
+
+            color: $color-dark-orange-3;
+            letter-spacing: 1rem;
+            font-size: 4rem;
+            border: 12px solid transparent;
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 3rem;
+            }
+
+        }
+
+
+
+        table {
+            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+
+            background: $color-orange;
+            color: $color-dark-orange-3;
+            border-radius: 15px;
+
+
+        }
+
+        table:not(td) {
+            border: 5px solid $color-cream;
+        }
+
+
+
+        table,
+        th,
+        td {
+            padding: 1.5rem 3rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                padding: 1rem 2.5rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: .8rem 2rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                padding: .5rem 1.5rem;
+
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                padding: .2rem .5rem;
+
+            }
+        }
+
+
+        td {
+            border-radius: 20px;
+            margin: 1rem;
+        }
+
+
+        td {
+            background: $col-shadow;
+            border: 5px solid transparent;
+
+        }
+
+        .table-first,
+        .table-second,
+        .table-third {
+            margin: 5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 3.5rem;
+
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                margin: 2rem;
+
+            }
+        }
+
+        .table-third {
+
+            text-align: center;
+
+        }
+    }
+}

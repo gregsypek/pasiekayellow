@@ -1,0 +1,349 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+
+    &__top {
+        color: $color-orange;
+        text-shadow: 4px 4px 6px rgba($color-dark-orange-3, .8);
+
+        &-title {
+            display: flex;
+            justify-content: center;
+            letter-spacing: .2rem;
+            font-size: 5rem;
+            padding: 4rem;
+            z-index: 201;
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 4rem;
+                padding: 3rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 3.5rem;
+                padding: .5rem;
+            }
+
+            span {
+                margin-left: 3rem;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        position: relative; //for sticky nav 
+        top: 0; //for sticky nav 
+        z-index: 200;
+        border-bottom: 4px solid $color-cream;
+        margin: 0;
+        background: $col-yellow;
+        align-content: center;
+        // padding: .5rem;
+    }
+
+    &__burger {
+        display: inline-block;
+
+        &-nav {
+            display: flex;
+            flex-basis: 100vw;
+            position: relative;
+            justify-content: space-evenly;
+
+            z-index: 4;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 3.5rem;
+            font-weight: 400;
+
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 3rem;
+            }
+        }
+
+        li {
+            display: inline-block; // wylacz zeby utworzyc
+            padding: 1.5rem;
+            margin-left: 8rem;
+
+            transition: all 1s ease;
+
+            @media only screen and (max-width: $bp-biggest) {
+                margin-left: 6rem;
+            }
+
+            @media only screen and (max-width: $bp-big) {
+                padding: .3rem 1rem;
+                margin-left: 4.5rem;
+            }
+
+            @media only screen and (max-width: $bp-largest) {
+
+                margin-left: 3.3rem;
+
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+
+                margin-left: 1rem;
+            }
+
+            a {
+                display: block;
+                transition: all .3s ease-in-out;
+                vertical-align: center;
+                font-weight: 600;
+                color: $color-dark-orange-3;
+
+                @media only screen and (max-width: $bp-large) {
+                    display: none;
+                }
+
+                &:link,
+                &:visited {
+                    padding: .8rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                }
+            }
+
+            &:hover a {
+                color: $col-wing;
+            }
+        }
+
+        .logo {
+
+            height: 6rem;
+            width: auto;
+            margin-right: 5rem;
+            padding: 0;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-right: 0;
+
+            }
+
+        }
+
+        &-icons {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+
+            .fa-bars {
+                text-align: right;
+                max-width: 0;
+                overflow: hidden;
+                transition: all 0.5s;
+                cursor: pointer;
+                color: $color-dark-orange-3;
+                font-size: 5.6rem;
+
+                @media only screen and (max-width: $bp-large) {
+                    max-width: 40px;
+                }
+            }
+
+            .fa-bars.on {
+                display: none;
+            }
+
+            .fa-times {
+                text-align: right;
+                max-width: 0;
+                overflow: hidden;
+                transition: all 0.5s;
+                cursor: pointer;
+                color: $color-dark-orange-3;
+                font-size: 5.6rem;
+            }
+
+            .fa-times.on {
+                max-width: 40px;
+                z-index: 10;
+            }
+        }
+
+    }
+
+    &__slider {
+        display: none;
+        height: 100%;
+        padding: 0;
+
+        @media only screen and (max-width: $bp-large) {
+            display: block;
+        }
+
+        &-nav {
+            padding: 25px;
+            margin: 0;
+            position: fixed;
+            top: 56px;
+            right: -100%;
+            width: 100%;
+            font-family: inherit;
+            background-image: url("../img/n1.png"), linear-gradient(to right, $col-yellow);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all .4s linear;
+            z-index: 206;
+            text-transform: uppercase;
+
+            li {
+                align-self: center;
+                letter-spacing: .8rem;
+                font-weight: 700;
+                list-style: none;
+                width: 50%;
+                transition: all 4s linear;
+
+                @media only screen and (max-width: $bp-small) {
+                    width: 0
+                }
+            }
+
+            a {
+                display: block;
+                padding: 2rem;
+                font-size: 3rem;
+                color: $color-dark-orange-3;
+
+                text-decoration: none;
+
+                &:hover {
+                    color: $col-wing;
+                }
+
+                @media only screen and (max-width: $bp-medium) {
+                    padding: 1.2rem;
+                }
+            }
+
+            &.on {
+                margin: 0;
+                z-index: 205;
+                top: 59px;
+                right: 0;
+                width: 100%;
+                z-index: 300;
+                font-family: $font-primary;
+            }
+
+        }
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-top: 7rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            margin-top: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-top: 3rem;
+        }
+
+        .adress {
+            font-size: 2rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.8rem;
+            }
+
+            &>p {
+                margin: .3rem;
+            }
+        }
+
+        &--invitation {
+            padding: 2rem;
+            font-size: 2.5rem;
+            width: 40vw;
+            text-align: center;
+            align-self: center;
+            color: $color-dark-orange-3;
+            font-weight: 400;
+            letter-spacing: .2rem;
+
+
+            background: $color-orange;
+            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+            border: 6px solid $color-cream;
+            border-radius: 10px;
+
+
+
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 50vw;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                width: 60vw;
+                font-size: 2.3rem;
+                margin-right: -3rem;
+
+            }
+        }
+
+
+        p:last-child {
+            letter-spacing: .2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                text-align: center;
+
+            }
+
+        }
+
+        .header-bee {
+            img {
+                margin-top: 2rem;
+                height: 4.5rem;
+                width: auto;
+                background-color: transparent;
+                animation: beeAnimation 1s ease-in-out infinite;
+                z-index: 101;
+            }
+        }
+    }
+
+}
+
+@keyframes beeAnimation {
+    0% {
+        transform: translateY(-10px)
+    }
+
+    50% {
+        transform: translateY(10px)
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+//sticky nav
+
+body.fixed-nav nav {
+    position: fixed;
+    border-bottom: 4px solid $color-cream;
+    width: 100%;
+}

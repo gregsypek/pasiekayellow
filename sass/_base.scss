@@ -1,0 +1,178 @@
+//COLOR VARIABLES
+$color-black:#1c140d;
+$color-light-black:#888;
+$color-grey:rgb(51, 51, 51);
+$color-grey:rgb(105, 100, 100);
+$color-white: #f2e9e1;
+$color-olive: #c1ec32;
+$color-cream-2: #f0e9c1df;
+
+
+$color-orange: #ffcc36; // new color
+
+
+$color-dark-orange: #e06c0d; //(238,118,0) 
+$color-dark-orange-2: #b45a11; //(238,118,0) 
+
+$color-dark-orange-3:#772F1A; //(238,118,0) 
+
+
+
+$color-cream: #f7a41a; //new color
+$color-cream-dark: #f5dc00;
+
+$color-brown-2: rgb(56, 34, 16);
+// FONT VARIABLES
+$font-primary: 'Sansita',
+sans-serif;
+
+
+// RESPONSIVE  BREAKPOINTS
+
+
+$bp-biggest: 100em; // 1600px
+$bp-big: 90em; // 1440px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 27.5em; //440px
+
+//NEW COLORS 
+
+$col-orange: #f7a41a;
+$col-orange2:rgb(246, 160, 22);
+$col-beige: #e2c275;
+$col-white: #f4f4f4;
+$col-beige-light: #eed38a;
+$col-brown: #c36a2d;
+$col-yellow: #ffcc36;
+$col-wing: #ececec;
+$col-shadow: #ffdb72;
+
+
+
+
+body {
+
+    background-image: url("../img/tt2.png"), linear-gradient(to right, $col-beige-light);
+
+
+    @media only screen and (max-width: $bp-small) {
+        background-image: url("../img/ss2.png"), linear-gradient(to right, $col-beige-light);
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+img {
+    overflow: auto;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: $font-primary, sans-serif;
+    font-weight: 400;
+    font-size: 62.5%; //10px
+    color: var(--black); // max-width: 1400px;
+
+    overflow-x: hidden;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 60%; //1em= 9.6px
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 58%; //1em= 9.28px
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 56%; //1em= 8,96px
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 52%; // 1em = 8,32px
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 50%; // 1em = 8px
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+}
+
+.wrapper {
+    display: grid;
+}
+
+// Animacja do sekcji tips
+@keyframes slideOn {
+    0% {
+        opacity: 0;
+    }
+
+    2% {
+        opacity: 1
+    }
+
+    98% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+//animacja do sekcji gallery
+@keyframes rotate {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.m-top {
+    margin-top: 10rem;
+}
+
+.b-top {
+    margin-top: 13rem;
+}
