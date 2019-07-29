@@ -39,7 +39,7 @@
         <nav class="header__nav">
             <div class="header__burger">
                 <ul class="header__burger-nav">
-                        <li><img src="img/new-logo3.png" alt="honey_logo" class="logo"></li>
+                        <li><img src="img/new-logo4.png" alt="honey_logo" class="logo"></li>
                         <li><a href="#about">O&nbsp;nas</a></li>
                         <li><a href="#gallery">Galeria</a></li>
                         <li><a href="#tips">Porady</a></li>
@@ -390,7 +390,7 @@
     <section class="footer m-top">
         <div class="footer-nav">
                 <ul class="footer-nav--left">
-                    <li><a href="#"><img src="img/new-logo4.png" alt="bee-icon" class="bee-grey"></a></li>
+                    <li><a><img src="img/new-logo4.png" alt="bee-icon" class="bee-grey"></a></li>
                     <li>Pasieka-Koniczynka, 39-308 Wadowice Górne, tel. +48 536230915</li>
                     
                 </ul>
@@ -398,6 +398,7 @@
                     <li><a href="https://www.facebook.com/katarzyna.zalinska.73">Facebook</a></li>
                     <li><a href="https://www.olx.pl/oferta/pasieka-koniczynka-miod-CID757-IDAJ0BX.html">OLX</a></li>
                     <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#">Strona główna</a></li>
                 </ul>
             
 

@@ -519,7 +519,6 @@ h6 {
   .header-text--invitation {
     width: 60vw;
     font-size: 2.3rem;
-    margin-right: -3rem;
   }
 }
 
@@ -1298,11 +1297,6 @@ body.fixed-nav nav {
 
 .footer img.bee-grey {
   width: 3.5rem;
-}
-
-.footer img.bee-grey:hover {
-  -webkit-animation: beeAnimation 1.3s ease-in-out infinite;
-          animation: beeAnimation 1.3s ease-in-out infinite;
 }
 
 section.gallery .gallery__box {
