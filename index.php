@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <meta name="description" content="Miód, sklep z miodem. Kup prawdziwy miód rzepakowy i spróbuj naturalnego zdrowego miodu z naszej pasieki położonej w malowniczej miejscowości Kawęczyn"> -->
     <meta name="Description" content="Naturalny miód pszczeli z własnej pasieki. Pasieka-koniczynka oferuje: miód rzepakowy, miód rzepakowy-kremowany, miód wielokwiatowy. Sprzedaż prosto z pasieki w Kawęczynie oraz wysyłkowo.">
-    <meta name="Keywords" content="miód, pasieka, koniczynka, pszczeli, Zaliński, Krzysztof, produkty, żywnościowe, Kawęczyn, gospodarstwo, sprzedaż, miodu, rzepakowy, kremowany, wielokwiatowy">
+    <meta name="Keywords" content="miód, pasieka, pasieka-koniczynka, koniczynka, pszczeli, Zaliński, Krzysztof, produkty, żywnościowe, Kawęczyn, gospodarstwo, sprzedaż, miodu, rzepakowy, kremowany, wielokwiatowy">
     <meta name="author" content="Grzegorz Sypek">
     <meta name="Copyright" content="Grzegorz Sypek">
     <title>Pasieka Koniczynka. Miód - sklep z miodem. Spróbuj naturalnego miodu z Kawęczyna</title>
@@ -19,10 +19,10 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="sass/main.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="sass/main.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
     <link rel="manifest" href="/favicons/site.webmanifest">
@@ -30,7 +30,17 @@
     <link rel="shortcut icon" href="/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#515151">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#515151">
+    <meta name="theme-color" content="#515151"> -->
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
